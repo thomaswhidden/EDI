@@ -2,7 +2,7 @@
 let img;//let "gif;" for image
 
 function preload (){
-  img = loadImage ('assets/Using as Gif for codingGOODSIZE')
+  img = loadImage ('assets/GOODSIZE')
 }
 
 function setup() {//runs once
