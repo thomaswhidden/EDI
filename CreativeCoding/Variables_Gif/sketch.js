@@ -1,8 +1,8 @@
 //create a program that enables us to customize the number of squares in a grid
-let img;//let "gif;" for image
+let gif;//let "gif;" for gif
 
 function preload (){
-  img = loadImage ('assets/GOODSIZE')
+  gif = loadImage ('assets/Iceberg_Gif.gif');
 }
 
 function setup() {//runs once
@@ -18,13 +18,12 @@ var num = 30;  //number of sides in the array
 var sideLen = windowWidth/num; //side length variable
 
 for (var y = 0; y < 2 * windowWidth; y = y + sideLen ){
-  for (var x = 0; x < 2* windowWidth; x = x + sideLen) {
-image(img, x, y, windowWidth/num, windowWidth/num);//gif for gif
+for (var x = 0; x < 2* windowWidth; x = x + sideLen) {
+image(gif, x, y, windowWidth/num, windowWidth/num);//gif for gif
 //  quad(x,y,
 //      x + sideLen, y,
 //      x + sideLen, y + sideLen,
 //      x, y + sideLen);
 }
 }
-
 }
