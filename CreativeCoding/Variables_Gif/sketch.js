@@ -17,8 +17,10 @@ strokeWeight (1);//assigns stroke weight
 var num = 30;  //number of sides in the array
 var sideLen = windowWidth/num; //side length variable
 
+translate (-100, -100);//translation creates a bleed effect
+
 for (var y = 0; y < 2 * windowWidth; y = y + sideLen ){
-for (var x = 0; x < 2* windowWidth; x = x + sideLen) {
+for (var x = 0; x < 2 * windowWidth; x = x + sideLen){
 image(gif, x, y, windowWidth/num, windowWidth/num);//gif for gif
 //  quad(x,y,
 //      x + sideLen, y,
@@ -26,4 +28,8 @@ image(gif, x, y, windowWidth/num, windowWidth/num);//gif for gif
 //      x, y + sideLen);
 }
 }
+}
+
+function windowResized () {
+  resizeCanvas (windowWidth, windowHeight)
 }
