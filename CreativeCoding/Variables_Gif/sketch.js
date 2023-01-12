@@ -31,5 +31,5 @@ image(gif, x, y, windowWidth/num, windowWidth/num);//gif for gif
 }
 
 function windowResized () {
-  resizeCanvas (windowWidth, windowHeight)
+  resizeCanvas (windowWidth, windowHeight);
 }
