@@ -6,7 +6,7 @@ function preload (){
 }
 
 function setup() {//runs once
-createCanvas (windowWidth,windowWidth);//creates a canvas that is 720 pixels
+createCanvas (windowWidth, windowWidth);//creates a canvas that is 720 pixels
 //background (249,160,160);
 }
 
