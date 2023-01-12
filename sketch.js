@@ -14,7 +14,7 @@ function draw() {//runs in a loop
 fill(207,223,242);//fills grid RGB color
 strokeWeight (1);//assigns stroke weight
 
-var num = 5;  //number of sides in the array
+var num = 7;  //number of sides in the array
 var sideLen = windowWidth/num; //side length variable
 
 translate (-100, -100);//translation creates a bleed effect
