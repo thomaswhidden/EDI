@@ -2,7 +2,7 @@
 let gif;//let "gif;" for gif
 
 function preload (){
-  gif = loadImage ('../assets/Iceberg_Gif.gif');
+  gif = loadImage ('assets/Iceberg_Gif.gif');
 }
 
 function setup() {//runs once
