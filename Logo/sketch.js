@@ -1,29 +1,35 @@
+//create a program that enables us to customize the number of squares in a grid
+let gif;//let "gif;" for gif
+
+function preload (){
+  gif = loadImage ('assets/Iceberg_Gif.gif');
+}
+
 function setup() {//runs once
-createCanvas (720,720);//creates a canvas that is 720 pixels
-background (96,90,155);
+createCanvas (windowWidth, windowWidth);//creates a canvas that is 720 pixels
+//background (249,160,160);
 }
 
 function draw() {//runs in a loop
 fill(207,223,242);//fills grid RGB color
-strokeWeight (8);//assigns stroke weight
-translate (60,60); //creates a new origin point (60,60)
-quad(0,0,
-      300,0,
-      300,300,
-      0,300);
+strokeWeight (1);//assigns stroke weight
 
-quad(300,0,
-      600,0,
-      600,300,
-      300,300);//add 300 in the x direction
+var num = 7;  //number of sides in the array
+var sideLen = windowWidth/num; //side length variable
 
-quad(0,300,
-      300,300,
-      300,600,
-      0,600);
+translate (-100, -100);//translation creates a bleed effect
 
-quad(300,300,
-      600,300,
-      600,600,
-      300,600);
+for (var y = 0; y < 2 * windowWidth; y = y + sideLen ){
+for (var x = 0; x < 2 * windowWidth; x = x + sideLen){
+image(gif, x, y, windowWidth/num, windowWidth/num);//gif for gif
+//  quad(x,y,
+//      x + sideLen, y,
+//      x + sideLen, y + sideLen,
+//      x, y + sideLen);
+}
+}
+}
+
+function windowResized () {
+  resizeCanvas (windowWidth, windowHeight);
 }
